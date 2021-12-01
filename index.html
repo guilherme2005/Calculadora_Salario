@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+
+    <div class="container">
+
+        <div class="titulo">
+            <i class="fa fa-calculator" style="font-size:24px"></i>
+            <h1>Cálculo de Salário</h1>
+        </div>
+
+        <div class="espaco">
+            <i class="fa fa-user" style="font-size:20px"></i>
+            <label for="">Nome  <br/>
+                <input class="inputs" id="nome" type="text">
+            </label>
+        </div>
+        
+        <div class="espaco">
+            <label for="">Valor da Hora  <br/>
+                <input class="inputs" id="valorHora" type="number">
+            </label>
+        </div>
+
+        <div class="espaco">
+            <label for="">Quantidade de Horas Trabalhadas<br/>
+                <input class="inputs" id="horasTrabalhadas" type="number">
+            </label>
+        </div>
+
+        <div class="espaco">
+            <label for="">Salario Bruto<br/>
+                <input class="inputs" id="salarioBruto" type="number" disabled>
+            </label>
+        </div>
+        
+        <div class="espaco">
+            
+            <label for="">IRFF<br/>
+                <input class="inputs" id="imposto" type="number" disabled>
+            </label>
+        </div>
+        <div class="espaco">
+            
+            <label for="">Salario Líquido<br/>
+                <input class="inputs" id="liquido" type="number" disabled>
+            </label>
+        </div>
+
+        <div class="espaco">
+            <button type="button" onclick="salarios()">Calcular</button>
+        </div>
+    </div>
+
+
+    <script src = " https://use.fontawesome.com/41495fbbbc.js " > </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
